@@ -1,0 +1,31 @@
+{
+  "name": "d3-disguise-sdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "default": "./dist/index.js"
+  },
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "tsx lib/test.ts"
+  },
+  "keywords": [],
+  "author": "Tom Durrant",
+  "license": "ISC",
+  "packageManager": "pnpm@8.5.0+sha256.b013403809dc950d169f16423b74e9b6c749f6934adb067abe90e9a16b89935f",
+  "devDependencies": {
+    "@types/node-osc": "^6.0.3",
+    "tsup": "^8.2.4",
+    "tsx": "^4.16.5",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "node-osc": "^9.1.3"
+  }
+}
