@@ -126,8 +126,4 @@ export class D3 {
     console.log(res);
     return res;
   }
-
-  public getVariables() {
-    return this.variables;
-  }
 }
