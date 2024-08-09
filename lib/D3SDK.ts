@@ -1,8 +1,14 @@
-import { Message, Client as OscClient } from "node-osc";
+import { D3OSCClient } from "./osc/client.js";
+import { SystemsClient } from "./http/systems/client.js";
+import { StatusClient } from "./http/status/client.js";
+import { ShowControlClient } from "./http/showControl/client.js";
 
 export class D3 {
-  #client: OscClient;
   #targetPort: number;
+  public systems: SystemsClient;
+  public session: StatusClient;
+  public showControl: ShowControlClient;
+  public osc: D3OSCClient;
 
   constructor({
     targetServer = "127.0.0.1",
@@ -10,54 +16,118 @@ export class D3 {
     receivePort = 7400,
   }) {
     this.#targetPort = targetPort;
-    this.#client = new OscClient(targetServer, targetPort);
+    this.osc = new D3OSCClient({
+      targetServer,
+      targetPort,
+    });
+    this.systems = new SystemsClient("http://" + targetServer);
+    this.session = new StatusClient("http://" + targetServer);
+    this.showControl = new ShowControlClient("http://" + targetServer);
   }
 
-  private send(address: string, ...args: any[]) {
-    this.#client.send(new Message(address, ...args));
+  public async goToTime({
+    directorUrl,
+    transportUid,
+    time,
+    playMode = "PlaySection",
+  }: {
+    directorUrl: string;
+    transportUid: string;
+    time: string;
+    playMode?: string;
+  }) {
+    const res = await fetch(directorUrl + "/api/session/transport/gototime", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        transports: [
+          {
+            transport: {
+              uid: transportUid,
+            },
+            time: time,
+            playmode: playMode,
+          },
+        ],
+      }),
+    });
+    console.log(res);
+    return res;
   }
 
-  public setCue(cue: string) {
-    const values = cue
-      .split(".")
-      .map((x) => parseInt(x, 10))
-      .filter((x) => !Number.isNaN(x));
-    this.send("/d3/showcontrol/cue", ...values);
+  public async goToTimeCode({
+    directorUrl,
+    transportUid,
+    timeCode,
+    playMode = "PlaySection",
+  }: {
+    directorUrl: string;
+    transportUid: string;
+    timeCode: string;
+    playMode?: string;
+  }) {
+    const res = await fetch(
+      directorUrl + "/api/session/transport/gototimecode",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          transports: [
+            {
+              transport: {
+                uid: transportUid,
+              },
+              timecode: timeCode,
+              ignoreTags: true,
+              playmode: playMode,
+            },
+          ],
+        }),
+      }
+    );
+    console.log(res);
+    return res;
   }
 
-  play() {
-    this.send("/d3/showcontrol/play");
+  public async goToTrack({
+    directorUrl,
+    transportUid,
+    trackUid,
+    playMode = "PlaySection",
+  }: {
+    directorUrl: string;
+    transportUid: string;
+    trackUid: string;
+    playMode?: string;
+  }) {
+    const res = await fetch(directorUrl + "/api/session/transport/gototrack", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        transports: [
+          {
+            transport: {
+              uid: transportUid,
+            },
+            track: {
+              uid: trackUid,
+            },
+            playmode: playMode,
+          },
+        ],
+      }),
+    });
+    console.log(res);
+    return res;
   }
 
-  playToEndOfSection() {
-    this.send("/d3/showcontrol/playsection");
-  }
-
-  loopSection() {
-    this.send("/d3/showcontrol/loop");
-  }
-
-  stop() {
-    this.send("/d3/showcontrol/stop");
-  }
-
-  previousSection() {
-    this.send("/d3/showcontrol/previoussection");
-  }
-
-  nextSection() {
-    this.send("/d3/showcontrol/nextsection");
-  }
-
-  returnToStart() {
-    this.send("/d3/showcontrol/returntostart");
-  }
-
-  previousTrack() {
-    this.send("/d3/showcontrol/previoustrack");
-  }
-
-  nextTrack() {
-    this.send("/d3/showcontrol/nexttrack");
+  public getVariables() {
+    return this.variables;
   }
 }

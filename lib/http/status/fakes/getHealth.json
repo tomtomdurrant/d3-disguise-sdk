@@ -1,0 +1,119 @@
+{
+	"status": {
+		"code": 0,
+		"message": "",
+		"details": []
+	},
+	"result": [
+		{
+			"machine": {
+				"uid": "6045413402460544786",
+				"name": "dis101",
+				"hostname": "DIS101"
+			},
+			"runningAsMachine": {
+				"uid": "6045413402460544786",
+				"name": "dis101",
+				"hostname": "DIS101"
+			},
+			"status": {
+				"averageFPS": 49.9994507,
+				"videoDroppedFrames": 25,
+				"videoMissedFrames": 1,
+				"states": [
+					{
+						"name": "Live Update",
+						"detail": "Director",
+						"category": "connection",
+						"severity": "ready"
+					},
+					{
+						"name": "Osc",
+						"detail": "Idle",
+						"category": "devices",
+						"severity": "ready"
+					},
+					{
+						"name": "Framelock",
+						"detail": "OK",
+						"category": "output",
+						"severity": "ready"
+					},
+					{
+						"name": "Settings",
+						"detail": "OK",
+						"category": "output",
+						"severity": "ready"
+					},
+					{
+						"name": "Genlock",
+						"detail": "Not supported",
+						"category": "genlock",
+						"severity": "offline"
+					}
+				]
+			}
+		},
+		{
+			"machine": {
+				"uid": "9235345221634255976",
+				"name": "dis102",
+				"hostname": "DIS102"
+			},
+			"runningAsMachine": {
+				"uid": "9235345221634255976",
+				"name": "dis102",
+				"hostname": "DIS102"
+			},
+			"status": {
+				"averageFPS": 49.9990387,
+				"videoDroppedFrames": 25,
+				"videoMissedFrames": 1,
+				"states": [
+					{
+						"name": "Live Update",
+						"detail": "Connected",
+						"category": "connection",
+						"severity": "ready"
+					},
+					{
+						"name": "Project Sync",
+						"detail": "OK",
+						"category": "connection",
+						"severity": "ready"
+					},
+					{
+						"name": "Transport Control",
+						"detail": "In sync",
+						"category": "connection",
+						"severity": "ready"
+					},
+					{
+						"name": "Osc",
+						"detail": "Idle",
+						"category": "devices",
+						"severity": "ready"
+					},
+					{
+						"name": "Framelock",
+						"detail": "OK",
+						"category": "output",
+						"severity": "ready"
+					},
+					{
+						"name": "Settings",
+						"detail": "OK",
+						"category": "output",
+						"severity": "ready"
+					},
+					{
+						"name": "Genlock",
+						"detail": "Not supported",
+						"category": "genlock",
+						"severity": "offline"
+					}
+				]
+			}
+		}
+	]
+}

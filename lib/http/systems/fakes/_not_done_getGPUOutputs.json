@@ -1,0 +1,73 @@
+{
+  "status": {
+    "code": 0,
+    "message": "",
+    "details": []
+  },
+  "result": [
+    {
+      "hostname": "DIS102",
+      "genlock": {
+        "frequency": 0
+      },
+      "gpuOutputs": [
+        {
+          "gpuPort": 1,
+          "genlockState": "FreeRun",
+          "emulated": false,
+          "resolution": {
+            "width": 1920,
+            "height": 1080
+          },
+          "refreshRate": 50,
+          "bitDepth": 8,
+          "colourFormat": "RGB"
+        },
+        {
+          "gpuPort": 3,
+          "genlockState": "FreeRun",
+          "emulated": false,
+          "resolution": {
+            "width": 1920,
+            "height": 1080
+          },
+          "refreshRate": 50,
+          "bitDepth": 8,
+          "colourFormat": "RGB"
+        }
+      ]
+    },
+    {
+      "hostname": "dis101",
+      "genlock": {
+        "frequency": 0
+      },
+      "gpuOutputs": [
+        {
+          "gpuPort": 1,
+          "genlockState": "FreeRun",
+          "emulated": false,
+          "resolution": {
+            "width": 1920,
+            "height": 1080
+          },
+          "refreshRate": 50,
+          "bitDepth": 8,
+          "colourFormat": "RGB"
+        },
+        {
+          "gpuPort": 3,
+          "genlockState": "FreeRun",
+          "emulated": false,
+          "resolution": {
+            "width": 1920,
+            "height": 1080
+          },
+          "refreshRate": 50,
+          "bitDepth": 8,
+          "colourFormat": "RGB"
+        }
+      ]
+    }
+  ]
+}

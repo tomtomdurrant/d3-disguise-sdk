@@ -1,0 +1,21 @@
+{
+  "status": {
+    "code": 0,
+    "message": "",
+    "details": []
+  },
+  "result": [
+    {
+      "uid": "12123513483926918423",
+      "name": "default",
+      "engaged": true,
+      "volume": 0.9900000095367432,
+      "brightness": 1,
+      "playmode": "PlaySection",
+      "currentTrack": {
+        "uid": "17235645259635846409",
+        "name": "act 2"
+      }
+    }
+  ]
+}

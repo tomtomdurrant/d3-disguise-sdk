@@ -1,0 +1,26 @@
+{
+	"status": {
+		"code": 0,
+		"message": "",
+		"details": []
+	},
+	"result": {
+		"isRunningSolo": false,
+		"isDirectorDedicated": false,
+		"director": {
+			"uid": "6045413402460544786",
+			"name": "dis101",
+			"hostname": "DIS101",
+			"type": "SoloV1"
+		},
+		"actors": [],
+		"understudies": [
+			{
+				"uid": "9235345221634255976",
+				"name": "dis102",
+				"hostname": "DIS102",
+				"type": "SoloV1"
+			}
+		]
+	}
+}

@@ -1,0 +1,79 @@
+{
+  "status": {
+    "code": 0,
+    "message": "",
+    "details": []
+  },
+  "result": [
+    {
+      "hostname": "DIS102",
+      "netAdapters": [
+        {
+          "name": "LX",
+          "mac": "C4-00-AD-21-AE-16",
+          "enabled": true,
+          "dhcp": false,
+          "status": "Up",
+          "addresses": [
+            {
+              "address": "10.101.1.2",
+              "subnet": "255.255.0.0",
+              "family": "IPv4",
+              "gateway": ""
+            }
+          ]
+        },
+        {
+          "name": "Video",
+          "mac": "C4-00-AD-21-AE-16",
+          "enabled": true,
+          "dhcp": false,
+          "status": "Up",
+          "addresses": [
+            {
+              "address": "10.0.101.22",
+              "subnet": "255.255.255.0",
+              "family": "IPv4",
+              "gateway": "10.0.101.254"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hostname": "dis101",
+      "netAdapters": [
+        {
+          "name": "LX",
+          "mac": "C4-00-AD-21-A9-84",
+          "enabled": true,
+          "dhcp": false,
+          "status": "Up",
+          "addresses": [
+            {
+              "address": "10.101.1.1",
+              "subnet": "255.255.0.0",
+              "family": "IPv4",
+              "gateway": ""
+            }
+          ]
+        },
+        {
+          "name": "Video",
+          "mac": "C4-00-AD-21-A9-84",
+          "enabled": true,
+          "dhcp": false,
+          "status": "Up",
+          "addresses": [
+            {
+              "address": "10.0.101.21",
+              "subnet": "255.255.255.0",
+              "family": "IPv4",
+              "gateway": "10.0.101.254"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

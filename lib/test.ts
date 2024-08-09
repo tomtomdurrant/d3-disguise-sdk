@@ -10,19 +10,23 @@ const d3 = new D3({
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 await delay(1000);
-d3.stop();
-await delay(1000);
-d3.play();
-await delay(1000);
-d3.loopSection();
-await delay(1000);
-d3.playToEndOfSection();
-await delay(1000);
-d3.setCue("10");
+const res = await d3.systems.getAll();
+console.log(res);
+const res2 = await d3.showControl.getActiveTransports();
+console.log(res2);
 
-setTimeout(() => {
-  d3.setCue("1.09");
-}, 1000);
+// await delay(1000);
+// d3.play();
+// await delay(1000);
+// d3.loopSection();
+// await delay(1000);
+// d3.playToEndOfSection();
+// await delay(1000);
+// d3.setCue("10");
+
+// setTimeout(() => {
+//   d3.setCue("1.09");
+// }, 1000);
 
 process.on("SIGINT", () => {
   // oscClient.close();

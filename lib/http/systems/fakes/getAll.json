@@ -1,0 +1,68 @@
+{
+  "status": {
+    "code": 1000,
+    "message": "Not every system was populated.",
+    "details": [
+      {
+        "@type": "type.googleapis.com/d3api.ExStatusDetail",
+        "uid": "DIS101",
+        "message": "Cannot get the runningProject for hostname: DIS101"
+      },
+      {
+        "@type": "type.googleapis.com/d3api.ExStatusDetail",
+        "uid": "DIS102",
+        "message": "Cannot get the runningProject for hostname: DIS102"
+      }
+    ]
+  },
+  "result": [
+    {
+      "hostname": "DIS101",
+      "type": "Solo",
+      "version": {
+        "major": 27,
+        "minor": 4,
+        "hotfix": 3,
+        "revision": 186729
+      },
+      "runningProject": "",
+      "ipAddress": "127.0.0.1",
+      "isDesignerRunning": true,
+      "isServiceRunning": true,
+      "isManagerRunning": true,
+      "isNotchHostRunning": false
+    },
+    {
+      "hostname": "DIS102",
+      "type": "Solo",
+      "version": {
+        "major": 27,
+        "minor": 4,
+        "hotfix": 1,
+        "revision": 185492
+      },
+      "runningProject": "",
+      "ipAddress": "10.101.1.2",
+      "isDesignerRunning": true,
+      "isServiceRunning": true,
+      "isManagerRunning": true,
+      "isNotchHostRunning": false
+    },
+    {
+      "hostname": "SPC101",
+      "type": "Designer",
+      "version": {
+        "major": 18,
+        "minor": 1,
+        "hotfix": 12,
+        "revision": 171491
+      },
+      "runningProject": "",
+      "ipAddress": "10.101.1.6",
+      "isDesignerRunning": false,
+      "isServiceRunning": false,
+      "isManagerRunning": false,
+      "isNotchHostRunning": false
+    }
+  ]
+}

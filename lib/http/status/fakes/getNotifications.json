@@ -1,0 +1,87 @@
+{
+	"status": {
+		"code": 0,
+		"message": "",
+		"details": []
+	},
+	"result": [
+		{
+			"machine": {
+				"uid": "6045413402460544786",
+				"name": "dis101",
+				"hostname": "DIS101"
+			},
+			"notifications": [
+				{
+					"summary": "BlueFishThread 1A capture dropped field(s).",
+					"detail": "Dropped: 112 field(s). Field count expected: 48036, current: 48260, incr: 2, SfI: 1Dropped: 14 field(s). Field count expected: 46684, current: 46712, incr: 2, SfI: 1Dropped: 52 field(s). Field count expected: 46722, current: 46826, incr: 2, SfI: 1"
+				},
+				{
+					"summary": "Auto Populate Conflict",
+					"detail": "Bank 1(text) Slot 1  already contains 001_1597_helvetica.png @ 3 may 2024 19:01:12.193 -  couldn't auto-populate older media 001 1597 neue haas light.pngv02.mov @ 3 may 2024 14:08:49.855Bank 1(text) Slot 2  already contains 002_monday_same.png @ 20 may 2024 12:53:53.951 -  couldn't auto-populate older media 002_monday.png @ 3 may 2024 16:20:25.844Bank 1(text) Slot 3  already contains 003_tuesday_same.png @ 20 may 2024 12:53:53.964 -  couldn't auto-populate older media 003_tuesday.png @ 3 may 2024 16:20:25.857Bank 1(text) Slot 4  already contains 004_wednesday_same.png @ 20 may 2024 12:53:53.976 -  couldn't auto-populate older media 004_wednesday.png @ 3 may 2024 16:20:25.869Bank 1(text) Slot 5  already contains 005_thursday_same.png @ 20 may 2024 12:53:53.988 -  couldn't auto-populate older media 005_friday.png @ 3 may 2024 16:20:25.881Bank 1(text) Slot 6  already contains 006_friday_same.png @ 20 may 2024 12:53:53.998 -  couldn't auto-populate older media 006_friday.png @ 3 may 2024 16:20:25.892Bank 1(text) Slot 7  already contains 007_saturday_same.png @ 20 may 2024 12:57:52.005 -  couldn't auto-populate older media 007_saturday.png @ 3 may 2024 16:20:25.903Bank 1(text) Slot 8  already contains 008_sunday_same.png @ 20 may 2024 12:58:24.461 -  couldn't auto-populate older media 008_sunday.png @ 3 may 2024 16:20:25.914Bank 55(thursday_daytime) Slot 55  already contains 055_thursday_daytime_03.png @ 21 may 2024 16:07:18.098 -  couldn't auto-populate older media 055_thursday_daytime_01.png @ 21 may 2024 16:06:05.892Bank 55(thursday_daytime) Slot 55  already contains 055_thursday_daytime_03.png @ 21 may 2024 16:07:18.098 -  couldn't auto-populate older media 055_thursday_daytime_02.png @ 21 may 2024 16:06:40.690"
+				},
+				{
+					"summary": "section error : section 35 has time less than or clashing with previous section",
+					"detail": " < Track::checkSections < Track::activate < Resource::safeActivate < ResourceLoader::loadApx < ResourceLoader::loadSelector < ResourceLoader::load < ResourceManager::scan < PackageSystem::doStart < Subsystem::start < SubsystemManager::sortAndStart < SubsystemManager::start < SubsystemManager::start < D3::doMainThread < d3 update thread"
+				},
+				{
+					"summary": "Unsupported audio codec in file: objects\\VideoFile\\1597_v05.mov",
+					"detail": "Detected audio type 'lpcm' is not supported by Designer software.\nPlease convert to 'sowt' or 'twos' for compatability."
+				},
+				{
+					"summary": "Unsupported audio codec in file: objects\\VideoFile\\1597_v04.mov",
+					"detail": "Detected audio type 'lpcm' is not supported by Designer software.\nPlease convert to 'sowt' or 'twos' for compatability."
+				},
+				{
+					"summary": "Unsupported audio codec in file: objects\\VideoFile\\1597_v02.mov",
+					"detail": "Detected audio type 'lpcm' is not supported by Designer software.\nPlease convert to 'sowt' or 'twos' for compatability."
+				},
+				{
+					"summary": "Unsupported audio codec in file: objects\\VideoFile\\1597_v03.mov",
+					"detail": "Detected audio type 'lpcm' is not supported by Designer software.\nPlease convert to 'sowt' or 'twos' for compatability."
+				},
+				{
+					"summary": "Unsupported audio codec in file: objects\\VideoFile\\1597.mov",
+					"detail": "Detected audio type 'lpcm' is not supported by Designer software.\nPlease convert to 'sowt' or 'twos' for compatability."
+				}
+			]
+		},
+		{
+			"machine": {
+				"uid": "9235345221634255976",
+				"name": "dis102",
+				"hostname": "DIS102"
+			},
+			"notifications": [
+				{
+					"summary": "Running a different version to the director",
+					"detail": "This machine is running r27.4.1 185492, but the director is running r27.4.3 186729\nI hope you know what you're doing."
+				},
+				{
+					"summary": "section error : section 35 has time less than or clashing with previous section",
+					"detail": " < Track::checkSections < Track::activate < Resource::safeActivate < ResourceLoader::loadApx < ResourceLoader::loadSelector < ResourceLoader::load < ResourceManager::scan < PackageSystem::doStart < Subsystem::start < SubsystemManager::sortAndStart < SubsystemManager::start < SubsystemManager::start < D3::doMainThread < d3 update thread"
+				},
+				{
+					"summary": "Unsupported audio codec in file: objects\\VideoFile\\1597_v04.mov",
+					"detail": "Detected audio type 'lpcm' is not supported by Designer software.\nPlease convert to 'sowt' or 'twos' for compatability."
+				},
+				{
+					"summary": "Unsupported audio codec in file: objects\\VideoFile\\1597_v05.mov",
+					"detail": "Detected audio type 'lpcm' is not supported by Designer software.\nPlease convert to 'sowt' or 'twos' for compatability."
+				},
+				{
+					"summary": "Unsupported audio codec in file: objects\\VideoFile\\1597_v03.mov",
+					"detail": "Detected audio type 'lpcm' is not supported by Designer software.\nPlease convert to 'sowt' or 'twos' for compatability."
+				},
+				{
+					"summary": "Unsupported audio codec in file: objects\\VideoFile\\1597_v02.mov",
+					"detail": "Detected audio type 'lpcm' is not supported by Designer software.\nPlease convert to 'sowt' or 'twos' for compatability."
+				},
+				{
+					"summary": "Unsupported audio codec in file: objects\\VideoFile\\1597.mov",
+					"detail": "Detected audio type 'lpcm' is not supported by Designer software.\nPlease convert to 'sowt' or 'twos' for compatability."
+				}
+			]
+		}
+	]
+}

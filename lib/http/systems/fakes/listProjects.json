@@ -1,0 +1,121 @@
+{
+  "status": {
+    "code": 1000,
+    "message": "Failed to parse d3 version: '' while processing d:\\d3 projects\\romeo&juliet\\romeo&juliet.d3",
+    "details": []
+  },
+  "result": [
+    {
+      "hostname": "DIS102",
+      "lastProject": "romeo&juliet\\romeo&juliet.d3",
+      "projects": [
+        {
+          "path": "d:\\d3 projects\\close-up\\close-up - final_show_file - new_mapping.d3",
+          "lastModified": "28 sep 2023 16:50:36.003",
+          "version": {
+            "major": 25,
+            "minor": 2,
+            "hotfix": 0,
+            "revision": 165620
+          }
+        },
+        {
+          "path": "d:\\d3 projects\\close-up\\close-up - final_show_file.d3",
+          "lastModified": "19 nov 2023 06:18:05.257",
+          "version": {
+            "major": 25,
+            "minor": 2,
+            "hotfix": 0,
+            "revision": 165620
+          }
+        },
+        {
+          "path": "d:\\d3 projects\\pacific overtures\\pacific overtures.d3",
+          "lastModified": "25 feb 2024 17:12:51.712",
+          "version": {
+            "major": 25,
+            "minor": 2,
+            "hotfix": 0,
+            "revision": 165620
+          }
+        },
+        {
+          "path": "d:\\d3 projects\\romeo&juliet\\romeo&juliet.d3",
+          "lastModified": "29 jun 2024 11:21:15.512",
+          "version": {
+            "major": 0,
+            "minor": 0,
+            "hotfix": 0,
+            "revision": 0
+          }
+        },
+        {
+          "path": "d:\\d3 projects\\romeo&juliet\\romeo&juliet_history837__20_may_2024_21h04m29s480ms.d3",
+          "lastModified": "21 may 2024 14:23:18.014",
+          "version": {
+            "major": 27,
+            "minor": 4,
+            "hotfix": 1,
+            "revision": 185492
+          }
+        },
+        {
+          "path": "d:\\d3 projects\\start\\start.d3",
+          "lastModified": "29 apr 2024 11:32:17.179",
+          "version": {
+            "major": 27,
+            "minor": 4,
+            "hotfix": 1,
+            "revision": 185492
+          }
+        },
+        {
+          "path": "d:\\d3 projects\\test\\test.d3",
+          "lastModified": "27 mar 2023 19:44:49.796",
+          "version": {
+            "major": 24,
+            "minor": 0,
+            "hotfix": 3,
+            "revision": 155917
+          }
+        }
+      ]
+    },
+    {
+      "hostname": "dis101",
+      "lastProject": "Romeo&Juliet\\romeo&juliet.d3",
+      "projects": [
+        {
+          "path": "d:\\d3 projects\\r&j rr\\r&j rr.d3",
+          "lastModified": "3 may 2024 13:46:57.083",
+          "version": {
+            "major": 27,
+            "minor": 4,
+            "hotfix": 1,
+            "revision": 185492
+          }
+        },
+        {
+          "path": "d:\\d3 projects\\romeo&juliet\\romeo&juliet.d3",
+          "lastModified": "29 jun 2024 11:19:49.622",
+          "version": {
+            "major": 0,
+            "minor": 0,
+            "hotfix": 0,
+            "revision": 0
+          }
+        },
+        {
+          "path": "d:\\d3 projects\\start\\start.d3",
+          "lastModified": "21 may 2024 12:13:00.927",
+          "version": {
+            "major": 27,
+            "minor": 4,
+            "hotfix": 3,
+            "revision": 186729
+          }
+        }
+      ]
+    }
+  ]
+}
